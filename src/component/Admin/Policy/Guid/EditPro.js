@@ -409,6 +409,36 @@ export default function EditPro(props) {
                             </TableRow>
                             <TableRow>
                                 <TableCell component="th" scope="row">
+                                    Region
+                                </TableCell>
+                                <TableCell>
+                                    <FormControl>
+                                        <Input
+                                            multiline
+                                            value={policy.OptionsSerialized.region}
+                                            onChange={handleOptionChange("region")}
+                                        />
+                                    </FormControl>
+                                </TableCell>
+                                <TableCell>仅对 S3 存储策略有效</TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell component="th" scope="row">
+                                    兼容实现
+                                </TableCell>
+                                <TableCell>
+                                    <FormControl>
+                                        <Input
+                                            multiline
+                                            value={policy.OptionsSerialized.compatibility}
+                                            onChange={handleOptionChange("compatibility")}
+                                        />
+                                    </FormControl>
+                                </TableCell>
+                                <TableCell>仅对 S3 存储策略有效</TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell component="th" scope="row">
                                     允许文件扩展名
                                 </TableCell>
                                 <TableCell>

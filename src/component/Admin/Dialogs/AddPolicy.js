@@ -68,6 +68,11 @@ const policies = [
         img:"onedrive.png",
         path:"/admin/policy/add/onedrive",
     },
+    {
+        name:"S3",
+        img:"s3.png",
+        path:"/admin/policy/add/s3",
+    },
 ];
 
 export default function AddPolicy({open, onClose }) {
